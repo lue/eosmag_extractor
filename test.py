@@ -12,7 +12,7 @@ def get_eosmag14(Zion, CMI, B12, T6, RHO):
     result = bp.stdout.readline()
     result = result.split()
     result = [float(i) for i in result]
-    print names, result
+    return names, result
 
 print('Column names:')
 names, result = get_eosmag14(30,50,0,101,1e13)
